@@ -1,0 +1,52 @@
+2019-10-17 22:36:56.078  INFO 14705 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on yoonui-MacBook-Pro.local with PID 14705 (started by yoon in /Users/yoon/Desktop/JavaDeveloper-NanoDegree/e-commerce App)
+2019-10-17 22:36:56.094  INFO 14705 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2019-10-17 22:36:56.996  INFO 14705 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 22:36:57.080  INFO 14705 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 4 repository interfaces.
+2019-10-17 22:36:57.751  INFO 14705 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71bc288a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 22:36:57.809  INFO 14705 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a69f0c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 22:36:57.817  INFO 14705 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 22:36:57.819  INFO 14705 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17f094a8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 22:36:57.826  INFO 14705 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$2f3e9376] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 22:36:57.836  INFO 14705 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 22:36:58.302  INFO 14705 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 22:36:58.347  INFO 14705 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 22:36:58.348  INFO 14705 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-10-17 22:36:58.482  INFO 14705 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 22:36:58.483  INFO 14705 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2202 ms
+2019-10-17 22:36:58.822  INFO 14705 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 22:36:59.076  INFO 14705 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 22:36:59.153  INFO 14705 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 22:36:59.263  INFO 14705 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-17 22:36:59.264  INFO 14705 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 22:36:59.455  INFO 14705 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 22:36:59.645  INFO 14705 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-17 22:37:00.611  INFO 14705 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 22:37:01.379  WARN 14705 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 22:37:01.491  INFO 14705 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d32742, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e742a7, org.springframework.security.web.header.HeaderWriterFilter@ef360ba, org.springframework.web.filter.CorsFilter@6cda9c36, org.springframework.security.web.authentication.logout.LogoutFilter@3b5f7ade, com.example.demo.security.JwtAuthenticationFilter@33114710, com.example.demo.security.JwtAuthorizationFilter@1be1aa1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e4620e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58662dc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6156715, org.springframework.security.web.session.SessionManagementFilter@78777135, org.springframework.security.web.access.ExceptionTranslationFilter@3ce36000, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c1ac9fd]
+2019-10-17 22:37:01.657  INFO 14705 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 22:37:01.939  INFO 14705 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 22:37:01.946  INFO 14705 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 6.771 seconds (JVM running for 10.996)
+2019-10-17 22:37:03.851  INFO 14705 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 22:37:03.852  INFO 14705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 22:37:03.863  INFO 14705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-17 22:37:03.988  INFO 14705 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : User name set with value: yoon
+2019-10-17 22:37:04.172  INFO 14705 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : Create yoon success!
+2019-10-17 22:37:08.367  INFO 14705 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : User name set with value: sara
+2019-10-17 22:37:08.448  INFO 14705 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : Create sara success!
+2019-10-17 22:37:12.599  INFO 14705 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : User name set with value: jisu
+2019-10-17 22:37:12.685  INFO 14705 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : Create jisu success!
+2019-10-17 22:37:18.148  INFO 14705 --- [http-nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 22:37:45.235  INFO 14705 --- [http-nio-8080-exec-8] c.e.demo.controllers.OrderController     : Order success with id: '1'
+2019-10-17 22:37:53.227  WARN 14705 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 5, column: 2]]
+2019-10-17 22:37:58.195  INFO 14705 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : User name set with value: jisu
+2019-10-17 22:37:58.197 ERROR 14705 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : Error with user password. Can not create jisu
+2019-10-17 22:38:06.954  INFO 14705 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : User name set with value: null
+2019-10-17 22:38:06.956 ERROR 14705 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : Error with user password. Can not create null
+2019-10-17 22:38:17.779  INFO 14705 --- [http-nio-8080-exec-6] c.e.demo.controllers.OrderController     : Order success with id: '2'
+2019-10-17 23:28:38.672  INFO 14705 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 23:28:38.674  INFO 14705 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 23:28:38.677  INFO 14705 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 23:28:38.682  INFO 14705 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
